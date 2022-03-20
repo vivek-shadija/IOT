@@ -3,7 +3,7 @@ function initMethod() {
 }
 
 function changeHeight() {
-    var height = Math.floor(Math.random() * 31) + 'em';
+    var height = Math.floor(Math.random() * 27) + 'em';
     water = document.getElementById('water');
     water.style.height = height;
     console.log(height);

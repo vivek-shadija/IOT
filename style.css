@@ -2,7 +2,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 300px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     /* background-color: antiquewhite;    */
 }
 
@@ -41,4 +41,35 @@
 #main_container {
     height: 100vh;
     background-color: rgb(68, 68, 68);
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+
+}
+.flex_container2{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: bisque;
+}
+.sub_container{
+    max-width: 460px;
+}
+.scale_flex{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scale_flex div{
+    margin: 55px 0px;
 }
