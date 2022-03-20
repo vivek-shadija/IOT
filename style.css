@@ -1,0 +1,44 @@
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 150px;
+    /* background-color: antiquewhite;    */
+}
+
+#glass {
+    /* background: rgba(255, 255, 255, 0.5); */
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+}
+
+#water {
+    background-image: url("https://priteshgupta.com/demos/fill/waves.png");
+    background-position: top right;
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    height: 10em;
+    border-radius: 100%;
+    animation: lightwaves 3s linear;
+    animation-iteration-count: infinite;
+    transition: all 3s;
+    border-radius: 10px;
+}
+
+@keyframes lightwaves {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+
+#main_container {
+    height: 100vh;
+    background-color: rgb(68, 68, 68);
+}
