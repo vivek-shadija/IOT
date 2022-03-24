@@ -1,75 +1,86 @@
 #container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    /* margin-top: 150px; */
-    /* background-color: antiquewhite;    */
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  /* margin-top: 150px; */
+  /* background-color: antiquewhite;    */
 }
 
 #glass {
-    /* background: rgba(255, 255, 255, 0.5); */
-    background-color: rgb(255, 255, 255);
-    width: 300px;
-    height: 400px;
-    position: relative;
-    border-radius: 10px;
+  /* background: rgba(255, 255, 255, 0.5); */
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
 }
 
 #water {
-    background-image: url("https://priteshgupta.com/demos/fill/waves.png");
-    background-position: top right;
-    position: absolute;
-    bottom: 0px;
-    width: 300px;
-    height: 10em;
-    border-radius: 100%;
-    animation: lightwaves 3s linear;
-    animation-iteration-count: infinite;
-    transition: all 3s;
-    border-radius: 10px;
+  background-image: url("https://priteshgupta.com/demos/fill/waves.png");
+  background-position: top right;
+  position: absolute;
+  bottom: 0px;
+  width: 300px;
+  height: 10em;
+  border-radius: 100%;
+  animation: lightwaves 3s linear;
+  animation-iteration-count: infinite;
+  transition: all 3s;
+  border-radius: 10px;
 }
 
 @keyframes lightwaves {
-    0% {
-        background-position: top left;
-    }
-    100% {
-        background-position: top right;
-    }
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
 }
 
 #main_container {
-    height: 100vh;
-    background-color: rgb(68, 68, 68);
-    justify-content: center;
-    align-items: center;
+  height: 83vh;
+  background-color: rgb(68, 68, 68);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.flex_container{
-    display: flex;
-    justify-content: space-between;
-    background-color: aquamarine;
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+}
+.flex_container2 {
+  display: flex;
+  /* flex-direction: column; */
+  background-color: bisque;
+}
+.sub_container {
+  max-width: 460px;
+}
+.scale_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#scale_flex div {
+  margin: 55px 0px;
 }
-.flex_container2{
-    display: flex;
-    /* flex-direction: column; */
-    background-color: bisque;
-}
-.sub_container{
-    max-width: 460px;
-}
-.scale_flex{
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
-}
-.heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sub_nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
-#scale_flex div{
-    margin: 55px 0px;
+.sub_nav_font {
+  font-size: 18px;
 }
